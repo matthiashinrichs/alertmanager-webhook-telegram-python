@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  telebot:
+    image: "alertmanager-webhook-telegram-python:latest" 
+    ports:
+      - "9119:9119"
+    environment:
+      bottoken: "**********"
+      chatid: "**********"
+      authentication: "False"
+      username: "prom"
+      password: "prom"
